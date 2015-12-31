@@ -1,0 +1,3 @@
+#!/bin/sh
+port=1337
+wrk -c 4000 -d 10 -t 24 "http://localhost:$port"
