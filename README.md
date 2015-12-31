@@ -40,7 +40,7 @@ Requests/sec:   2072.28
 Transfer/sec:    261.06KB
 ```
 
-### full with everything enalbed
+### full with everything enabled
 straight up dies
 
 ## License
