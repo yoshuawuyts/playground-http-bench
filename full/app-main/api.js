@@ -23,8 +23,6 @@ function api (req, res, ctx) {
 const html = bankai.html()
 router.on('/', function (params, req, res) {
   return html(req, res)
-    .pipe(tk({ kitId: 'ecw0lda' }))
-    .pipe(hs({ body: { _appendHtml: vdom(client()) } }))
 })
 
 // js
