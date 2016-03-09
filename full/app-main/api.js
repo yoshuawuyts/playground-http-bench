@@ -20,7 +20,7 @@ function api (req, res, ctx) {
 }
 
 // html
-const html = bankai.html()
+const html = bankai.html({ css: false, favicon: true })
 router.on('/', function (params, req, res) {
   return html(req, res)
 })
@@ -30,10 +30,10 @@ const js = bankai.js(browserify, 'client-main')
 router.on('/bundle.js', (params, req, res) => js(req, res))
 
 // css
-const css = bankai.css(sheetify, 'client-main/index.css', {
-  use: [ 'sheetify-cssnext' ]
-})
-router.on('/bundle.css', (params, req, res) => css(req, res))
+// const css = bankai.css(sheetify, 'client-main/index.css', {
+//   use: [ 'sheetify-cssnext' ]
+// })
+// router.on('/bundle.css', (params, req, res) => css(req, res))
 
 // 404
 router.on('/404', function (params, req, res) {

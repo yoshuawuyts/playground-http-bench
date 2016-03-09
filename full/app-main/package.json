@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "JSONStream": "^1.0.7",
-    "bankai": "^1.0.2",
+    "bankai": "^2.0.1",
     "bole-stream": "^2.1.0",
     "browserify": "^12.0.1",
     "http-ndjson": "^3.0.0",
